@@ -19,17 +19,17 @@
           </v-col>
           <v-col cols="3">
             <div style="position: relative; z-index: 9999;" class="mt-16">
-              <v-img src="../../public/Eu-png.png" contain max-height="300" class="minha-foto"></v-img>
+              <v-img src="../../public/iEu-png.png" contain max-height="300" class="minha-foto"></v-img>
             </div>
           </v-col>
         </v-row>
       </div>
-      <v-col cols="12" class="mt-16" id="spro">
+      <v-col cols="12" class="mt-16" id="sobre">
         <div>
           <v-row>
             <v-col cols="12" sm="6">
               <div class="ovo">
-                <v-img src="../assets/Sobre-mim.png"></v-img>
+                <v-img src="../../public/Sobre-mim.png"></v-img>
               </div>
             </v-col>
             <v-col cols="12" sm="6">
@@ -50,7 +50,8 @@
         </div>
       </v-col>
       <div class="text-center mt-4">
-        <h2 >Minhas habilidades</h2>
+        <h2 >Profissional</h2>
+        <h5 class="text-grey">Minhas habilidades:</h5>
         <div style="width: 120px; margin: 0 auto">
           <v-slider v-model="slider2" color="#9c3fc5" label=""></v-slider>
         </div>
@@ -76,12 +77,129 @@
                 <v-btn icon="fas fa-database" color="#9c3fc5" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">Data Science</h3>
                 <p class="text-grey ml-3 mt-4 text-caption">
-                  Data Science com Python, SQL, Pandas: análise e manipulação de dados.<br />  Power BI para visualização e insights valiosos.
+                  Data Science com Python, SQL, Pandas: análise e <br />manipulação de dados.  Power BI para visualização<br /> e insights valiosos.
                 </p>
               </div>
             </v-col>
           </v-row>
+          <v-divider></v-divider>
         </div>
+      </v-col>
+      <!-- <v-col cols="12" sm="12" id="portifolio">
+        <div class="d-flex justify-center mb-6">
+          <v-btn color="#da85ff" class="mr-2">Todos</v-btn>
+          <v-btn class="mr-2" variant="tonal"> Dev Front-End</v-btn>
+          <v-btn class="mr-2" variant="tonal">Dev Back-End</v-btn>
+          <v-btn class="mr-2" variant="tonal">Dev Full-Stack</v-btn>
+        </div>
+      </v-col>
+      <v-col cols="12" class="imgHover">
+        <v-row class="fill-height" align="center" justify="center">
+          <template v-for="(item, i) in itens" :key="i">
+            <v-col cols="12" md="4">
+              <v-hover v-slot="{isHovering, props}">
+                <v-card :elevation="isHovering ? 12:2" :class="{'on-hover' : isHovering}" v-bind="props">
+                  <v-img :src="item.img" height="225px"></v-img>
+                </v-card>
+              </v-hover>
+            </v-col>
+          </template>
+        </v-row>
+      </v-col>
+      <v-col cols="12" sm="12">
+        <div class="d-flex justify-center mb-6">
+          <v-btn color="#da85ff" class="mt-4">Mostrar mais</v-btn>
+        </div>
+      </v-col> -->
+      <!-- componente abaixo vai ser minhas maginas, ou seja meu portifolio -->
+      <v-col cols="12" id="experiencia">
+        <div class="pre">
+          <v-row>
+            <v-col cols="12" sm="4">
+              <v-card class="mw-auto" max-width="344" height="">
+                <v-img src="i14.png" height="200px" cover></v-img>
+                <v-card-title>Template 1</v-card-title>
+                <v-card-subtitle>
+                  Função
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quisquam, voluptatum. Quisquam, voluptatum.
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-card class="mw-auto" max-width="344" height="">
+                <v-img src="i23.png" height="200px" cover></v-img>
+                <v-card-title>Template 2</v-card-title>
+                <v-card-subtitle>
+                  Função
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quisquam, voluptatum. Quisquam, voluptatum.
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" sm="4" >
+              <v-card class="mw-auto" max-width="344" height="">
+                <v-img src="i22.png" height="200px" cover></v-img>
+                <v-card-title>Template 3</v-card-title>
+                <v-card-subtitle>
+                  Função
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quisquam, voluptatum. Quisquam, voluptatum.
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
+      <!-- o componente a baixo vai ser minhas experiencias -->
+      <v-col cols="12" id="experiencia">
+        <div class="contratado">
+          <v-row>
+            <v-col cols="12" sm="8">
+              <h1 class="mt-9">Me contrate para seu projeto</h1>
+              <p class="text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quisquam, voluptatum. Quisquam, voluptatum.
+              </p>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-btn color="#da85ff" class="mt-15">Contrate-me</v-btn>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
+      <v-col cols="12" sm="12" class="px-16" id="contato">
+        <v-row>
+          <v-col cols="12" sm="4">
+            <div class="filho">
+              <h1>Infomações de contato</h1>
+              <v-btn icon="fas fa-map-marker-alt" class="mt-10" variant="outlined"></v-btn><br />
+              <span class="text-caption">Rua: 0000, Bairro: 0000, Cidade: 0000</span><br />
+              <v-btn icon="fas fa-phone-alt" class="mt-10" variant="outlined"></v-btn><br />
+              <span class="text-caption">+55 00 0000-0000</span><br />
+              <span class="text-caption">+55 00 0000-0000</span><br />
+              <v-btn icon="fas fa-envelope" class="mt-10" variant="outlined"></v-btn><br />
+              <span class="text-caption">gouveia.cesar07@gmail.com</span><br />
+              <span class="text-caption">gouveia.cesar07@gmail.com</span><br />
+            </div>
+          </v-col>
+          <v-col cols="12" sm="8">
+            <h1 class="mt-8">Fale comigo</h1>
+            <v-divider></v-divider>
+            <span class="text-caption">Preencha o formulário abaixo para entrar em contato comigo</span>
+            <v-row class="mt-10">
+              <v-col cols="12" sm="6">
+                <v-text-field label="Nome" persistent-hint variant="outlined"></v-text-field>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
       </v-col>
     </v-container>
   </v-app>
@@ -99,13 +217,9 @@ export default defineComponent({
     return {
       slider2: 50,
       itens: [
-        { img: "../../public/dicas-projetos-frontend-min.png" },
-        { img: "../../public/2.png" },
-        { img: "../../public/5.png" },
-        { img: "../../public/6.png" },
-        { img: "../../public/7.png" },
-        { img: "../../public/8.png" },
-        { img: "../../public/9.png" }
+        { img: "i14.png" },
+        { img: "i23.png" },
+        { img: "i22.png" }
       ],
     }
   },
@@ -195,6 +309,7 @@ border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;;
   height: 200px;
   padding: 0 200px;
   background-color: #e9e9e9;
+  margin-top: -24px;
 }
 
 </style>
