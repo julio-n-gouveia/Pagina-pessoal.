@@ -19,7 +19,7 @@
           </v-col>
           <v-col cols="3">
             <div style="position: relative; z-index: 9999;" class="mt-16">
-              <v-img src="../../public/iEu-png.png" contain max-height="300" class="minha-foto"></v-img>
+              <v-img src="../../public/i24.png" contain max-height="300" class="minha-foto"></v-img>
             </div>
           </v-col>
         </v-row>
@@ -29,7 +29,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <div class="ovo">
-                <v-img src="../../public/Sobre-mim.png"></v-img>
+                <v-img src="../../public/i25.png"></v-img>
               </div>
             </v-col>
             <v-col cols="12" sm="6">
@@ -192,12 +192,19 @@
           <v-col cols="12" sm="8">
             <h1 class="mt-8">Fale comigo</h1>
             <v-divider></v-divider>
-            <span class="text-caption">Preencha o formulário abaixo para entrar em contato comigo</span>
+            <span class="text-caption">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae esse enim excepturi tempora laboriosam cupiditate sit ducimus, laborum deserunt blanditiis illum soluta voluptates nisi reiciendis veritatis sunt veniam ipsam unde!
+            </span>
             <v-row class="mt-10">
               <v-col cols="12" sm="6">
                 <v-text-field label="Nome" persistent-hint variant="outlined"></v-text-field>
               </v-col>
+              <v-col cols="12" sm="6">
+                <v-text-field label="Seu Telefone" persistent-hint variant="outlined"></v-text-field>
+              </v-col>
             </v-row>
+            <V-textarea label="Mensagem" persistent-hint variant="outlined"></V-textarea>
+            <v-btn color="#da85ff" class="mt-10">Enviar</v-btn>
           </v-col>
         </v-row>
       </v-col>
